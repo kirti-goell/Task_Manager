@@ -2,7 +2,7 @@
 const express = require('express')
 
 const {verifyEmail , verifyUserName , verification , strongPassword } = require('./middlewareFile.js')
-const {register, login , userTasks, newTask,updateTask,deleteTask} = require('./endPointsFile.js')
+const {register, login , userTasks, newTask,updateTask,deleteTask, userImage} = require('./endPointsFile.js')
 //all declarations
 const port = 5000
 const app = express();
@@ -21,6 +21,7 @@ app.get('/tasks',userTasks)
 app.post('/tasks',newTask)
 app.put('/tasks/:id',updateTask)
 app.delete('/tasks/:id',deleteTask)
+app.post('/image' ,userImage)
 
 
 

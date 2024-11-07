@@ -1,4 +1,4 @@
-// req = email , userName , password 
+// req = email , userName , password , userImage
 const register = function(req,res){
     
 }
@@ -25,5 +25,9 @@ const deleteTask = function(req,res){
 
 }
 
+const userImage = function(req,res){
+    
+}
 
-module.exports={register, login , userTasks, newTask,updateTask,deleteTask}
+
+module.exports={register, login , userTasks, newTask,updateTask,deleteTask,userImage}
