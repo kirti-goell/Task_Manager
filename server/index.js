@@ -1,14 +1,14 @@
 //all requirements 
 const express = require('express')
 
-const {verifyEmail , verifyUserName , verification } = require('./middlewareFile.js')
+const {verifyEmail , verifyUserName , verification , strongPassword } = require('./middlewareFile.js')
 const {register, login , userTasks, newTask,updateTask,deleteTask} = require('./endPointsFile.js')
 //all declarations
 const port = 5000
 const app = express();
 
 //all middlewares
-app.use('/register',verifyEmail,verifyUserName)
+app.use('/register',verifyEmail,verifyUserName,strongPassword)
 app.use('/tasks',verification)
 
 

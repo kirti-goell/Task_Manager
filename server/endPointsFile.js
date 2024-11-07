@@ -1,11 +1,14 @@
+// req = email , userName , password 
 const register = function(req,res){
-
+    
 }
 
+// req = email , password
 const login = function(req,res){
 
 }
 
+// req = 
 const userTasks = function(req,res){
 
 }
